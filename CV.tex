@@ -1,0 +1,197 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[a4paper, total={6.3in, 8.8in}]{geometry}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\usepackage[utf8]{inputenc}
+\usepackage{eso-pic} % \AddToShipoutPicture
+\usepackage{fontspec}
+\usepackage{pgfplots}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{mdframed}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{flafter}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{blindtext}
+\usepackage{pgfplots}
+\usepackage{seqsplit}
+\usepackage[cache=false]{minted}
+\usepackage{stmaryrd}
+\usepackage{semantic}
+\usepackage{url}
+\usepackage{color}
+\usepackage{flushend}
+\usepackage{subfigure}
+\usepackage{tikz}
+\usepackage{svg}
+\usepackage{pdfpages}
+\usepackage{titling}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{14pt plus 4pt minus 2pt}{0pt plus 2pt minus 0pt}
+\titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 0pt}
+
+\usepackage{cleveref}
+\usepackage[parfill]{parskip}
+\usepackage[toc,page]{appendix}
+\setmainfont{Latin Modern Sans}
+
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+
+% pdffor adjustwidth environment
+\usepackage[strict]{changepage}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Curriculum Vitae for Mikkel Storgaard Knudsen}
+
+\begin{document}
+Mikkel Storgaard Knudsen \\
+Bogtrykkervej 16 2.tv \\
+2400 København NV \\
+42 43 41 45 \\
+mikkelstorgaard@gmail.com
+
+\subsection*{Summary}
+I am a recent Master's graduate in Computer Science, and having defended my master's thesis with honors, 
+I am now looking to step into a formal role where I can apply my coding- and 
+academic skills in an area that matters.
+
+In the last several years, I have increasingly been getting involved in complex
+projects in fields, I haven't necessarily worked with before. In particular, I thrive with tasks related to
+research, development and problem solving, and I make an effort of delivering
+tangible and quantifiable results.\\
+My practical experience shows this, by having a 100\% implemented success rate of products
+in both student jobs and academic projects, always backing up my results with
+data and benchmarks.
+
+As a person I am outgoing and sociable, and I enjoy contributing to my
+workplace professionally as well as socially, in example by arranging after-hours social
+events.
+
+I am looking forward to becoming part of a talented team of highly capable
+colleagues in a high skill ceiling environment, where I can partake in solving high
+complexity tasks, as well as hone myself professionally by learning from the
+best.
+
+\subsection*{Professional experience}
+% \textbf{Software engineer at Rehfeld Medical} \textit{(February 2019 --)}
+%   \begin{itemize}[topsep=0pt]
+%   \item Implementing
+%   \end{itemize}
+
+\textbf{Backend developer at June by Danske Bank} \textit{(March 2017 -- February 2019)}
+  \begin{itemize}[topsep=0pt]
+  \item Primary responsible the current design and
+  implementation of our image recognition engine, which is used for
+  verifying customer identity documents during our customer onboarding
+  \textit{KYC}\footnote{Know Your Customer; in other words the step of verifying a
+    customer's identity.} process, increasing from 56\% to \textasciitilde 92\%.
+
+  \item Responsibility for developing a document rendering
+  engine in use for generating contracts and other legal documents
+  during customer onboarding and fund transactions.
+
+  \item Development of tools for our Quality Assurance division. 
+
+  \item Currently part of the ongoing feature developments in June, where I do
+  software implementation, code reviews, and partake in sprint planning- and
+  ticket grooming sessions.
+  \end{itemize}
+
+  At June, my primary tools have been C\#, Python, OpenCV, Tesseract OCR, LaTeX, Docker, Elm and Node.js
+
+\textbf{Full-stack-udvikler at Eksponent} \textit{(March 2016 -- March 2017)}
+  \begin{itemize}[topsep=0pt]
+  \item Consultant with responsibility for implementing and deploying
+  C\#/Umbraco web projects for customers.
+  Tasks included C\#/HTML/CSS programming, setting up Azure server
+  configurations and designing and deploying continous
+  integration pipelines with automated testing, by the means of Octopus and Travis.
+
+  \item Sole contact between company and
+  customer, having also represented Eksponent in customer meetings.
+  \end{itemize}
+
+  At Eksponent, my primary tools have been C\#, Umbraco, MSSQL, Azure, Travis
+  and Octopus.\\
+  \pagebreak
+
+\textbf{Teaching Assistant at The University of Copenhagen} \textit{(September 2017 -- November 2017)}
+\begin{itemize}[topsep=0pt]
+\item 
+  Teaching assistant on the \textit{Advanced Programming} master's course, where
+  I have had the responsibility for preparing and hosting weekly lab sessions
+  for my assigned class of students, in addition to correcting, grading and
+  giving feedback on weekly assignments.
+\item
+  The role included final grading of the \textit{Advanced Programming}
+  exam submissions.
+\end{itemize}
+
+  In \textit{Advanced Programming}, I taught the languages Haskell, Prolog and
+  Erlang.
+
+\subsection*{Education}
+\textbf{MSc in Computer Science at The University of Copenhagen} \textit{(August 2016 -- January 2019)}\\
+  During my master's program, I have focused on courses covering compilers,
+  logic, semantics and type theory, and functional and parallel programming,
+  including GPGPU\footnote{General Purpose Graphics Processing Unit} programming.
+
+  For my thesis \textit{FShark: Futhark programming in
+    FSharp}\footnote{\url{https://futhark-lang.org/student-projects/mikkel-msc-thesis.pdf}},
+  my two biggest contributions was the design and implementation of a C\# backend for
+  the Futhark compiler, and the design and implementation of an F\#-to-Futhark transpiler.
+  The C\# backend has since become part of the official Futhark compiler, and is
+  now enabling developers to effortlessly integrate high-performance GPU powered
+  computational kernels in standard .NET projects.
+
+  My thesis was given the grade \textit{12} at the defense, corresponding to
+  an A on the international ECTS scale.
+  
+\textbf{BSc in Computer Science at The University of Copenhagen} \textit{(August 2012 -- June 2016)}\\
+  For my finishing bachelor's project, I extended the Futhark language with type
+  aliases, and described a complete design for implementing ML-style higher-order modules.
+
+\textbf{General Certificate of Secondary Education (STX) at Viborg Gymnasium \& HF} \textit{(Finished 2010)}\\
+  With a focus on social sciences, English and mathematics.
+
+\subsection*{Skill summary}
+Here follows a summary of the languages and technologies that I am experienced in,
+and can confidently work with:\\
+APL, Bash/Linux, Assembly, C, C++, C\#, CUDA, Elm, Elixir, F\#, Go, Haskell,
+Java, JavaScript, Matlab, Node.js, Numpy, OpenCL, OpenCV, Python (2 \& 3),
+Standard ML, SQL and Tesseract OCR.
+
+Amazon Web Services, Azure, Benchmarking, DSL design and -implementation, Docker, functional
+programming, Git, GPGPU programming, Jenkins, Octopus, SCRUM/agile development,
+Test-Driven Development, Travis, parallel programming, property-based testing og
+project management using Jira.
+
+I am a competent English speaker and -writer, and am used to work in an
+international environment.
+
+\subsection*{About me}
+I have been a political activist since 2009, working with both student-, LGBTQ-
+and national politics, and I am currently a member and the treasurer of
+Enhedslistens Queer Committee.
+
+My spare time is spent on my friends and hobbies: I have large interest in music,
+and I play guitar and bass at the amateur level.
+In general, I love using the city and it's nightlife, and I am an avid concert- and
+cinema-goer. I have spent my time on student revues for the last five years, primarily as a writer
+and director, but also on-stage as a singer/actor.
+
+Finally, I also enjoy cycling, video games and cooking.
+\end{document}
+
+
+%%% Local Variables:
+%%% coding: utf-8
+%%% TeX-command-extra-options: "-shell-escape"
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% End:
