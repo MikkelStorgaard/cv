@@ -1,5 +1,9 @@
 \documentclass[10pt, a4paper]{article}
-\usepackage[a4paper, total={6.3in, 8.8in}]{geometry}
+\usepackage[
+a4paper,
+total={6.3in, 9.85in},
+bmargin=0.5in
+ ]{geometry}
 \usepackage{enumitem}% http://ctan.org/pkg/enumitem
 \usepackage[utf8]{inputenc}
 \usepackage{eso-pic} % \AddToShipoutPicture
@@ -56,16 +60,15 @@ Bogtrykkervej 16 2.tv \\
 mikkelstorgaard@gmail.com
 
 \subsection*{Summary}
-I am a recent Master's graduate in Computer Science, and having defended my master's thesis with honors, 
-I am now looking to step into a formal role where I can apply my coding- and 
-academic skills in an area that matters.
+I am a Master's graduate in Computer Science from the University of Copenhagen,
+and am currently working full-time as a software developer in Copenhagen.
 
 In the last several years, I have increasingly been getting involved in complex
 projects in fields, I haven't necessarily worked with before. In particular, I thrive with tasks related to
 research, development and problem solving, and I make an effort of delivering
 tangible and quantifiable results.\\
-My practical experience shows this, by having a 100\% implemented success rate of products
-in both student jobs and academic projects, always backing up my results with
+My practical experience shows this by having a 100\% implementation rate of products
+from both student jobs and academic projects, always backing up my results with
 data and benchmarks.
 
 As a person I am outgoing and sociable, and I enjoy contributing to my
@@ -78,10 +81,21 @@ complexity tasks, as well as hone myself professionally by learning from the
 best.
 
 \subsection*{Professional experience}
-% \textbf{Software engineer at Rehfeld Medical} \textit{(February 2019 --)}
-%   \begin{itemize}[topsep=0pt]
-%   \item Implementing
-%   \end{itemize}
+\textbf{Software developer at Abacus Medicine} \textit{(August 2019 --)}
+  \begin{itemize}[topsep=0pt]
+  \item Main feature developer on internal proprietary \textit{assisted
+      decision-making} trading platform.
+
+  \item Primary tasks include front- and backend design, testing and
+    implementation, in addition to DevOps tasks such as the ongoing tweaking
+    of our continuous integration and -deployment pipeline.
+
+  \item Key part of weekly meetings with internal stakeholders and developers, collaborating
+    on resolving design problems, prioritizing new features, and roadmapping. 
+  \end{itemize}
+
+  At Abacus Medicine, I primarily work with OCaml, C\#, Microsoft's T-SQL and
+  Docker, together with Azure, Jira and Bitbucket.
 
 \textbf{Backend developer at June by Danske Bank} \textit{(March 2017 -- February 2019)}
   \begin{itemize}[topsep=0pt]
@@ -97,27 +111,22 @@ best.
 
   \item Development of tools for our Quality Assurance division. 
 
-  \item Currently part of the ongoing feature developments in June, where I do
-  software implementation, code reviews, and partake in sprint planning- and
+  \item Part of the feature development team in June, with responsibilities in 
+  software implementation, code reviews, sprint planning and
   ticket grooming sessions.
   \end{itemize}
 
   At June, my primary tools have been C\#, Python, OpenCV, Tesseract OCR, LaTeX, Docker, Elm and Node.js
 
-\textbf{Full-stack-udvikler at Eksponent} \textit{(March 2016 -- March 2017)}
-  \begin{itemize}[topsep=0pt]
-  \item Consultant with responsibility for implementing and deploying
-  C\#/Umbraco web projects for customers.
-  Tasks included C\#/HTML/CSS programming, setting up Azure server
-  configurations and designing and deploying continous
-  integration pipelines with automated testing, by the means of Octopus and Travis.
-
-  \item Sole contact between company and
-  customer, having also represented Eksponent in customer meetings.
-  \end{itemize}
-
-  At Eksponent, my primary tools have been C\#, Umbraco, MSSQL, Azure, Travis
-  and Octopus.\\
+\textbf{Full-stack Consultant at Eksponent} \textit{(March 2016 -- March 2017)}
+\begin{itemize}[topsep=0pt]
+\item 
+Design-, development- and
+deployment responsibilities for client projects, as well as tool development for
+internal usage.
+\end{itemize}
+At Eksponent, my primary tools have been C\#, Umbraco, MSSQL, Azure, Continous
+Integration using Travis, and Octopus.\\
   \pagebreak
 
 \textbf{Teaching Assistant at The University of Copenhagen} \textit{(September 2017 -- November 2017)}
@@ -128,7 +137,7 @@ best.
   for my assigned class of students, in addition to correcting, grading and
   giving feedback on weekly assignments.
 \item
-  The role included final grading of the \textit{Advanced Programming}
+  The role included grading of the final \textit{Advanced Programming}
   exam submissions.
 \end{itemize}
 
@@ -141,12 +150,16 @@ best.
   logic, semantics and type theory, and functional and parallel programming,
   including GPGPU\footnote{General Purpose Graphics Processing Unit} programming.
 
+  Among other things, my final year at \textit{UCPH} assisting a Physics Ph.D. student in
+  rewriting and refactoring a complex simulation
+  from sequential C++, into an elegant and parallel GPU-powered C++/CUDA solution.
+  
   For my thesis \textit{FShark: Futhark programming in
     FSharp}\footnote{\url{https://futhark-lang.org/student-projects/mikkel-msc-thesis.pdf}},
   my two biggest contributions was the design and implementation of a C\# backend for
   the Futhark compiler, and the design and implementation of an F\#-to-Futhark transpiler.
   The C\# backend has since become part of the official Futhark compiler, and is
-  now enabling developers to effortlessly integrate high-performance GPU powered
+  now enabling developers to effortlessly integrate high-performance GPU-powered
   computational kernels in standard .NET projects.
 
   My thesis was given the grade \textit{12} at the defense, corresponding to
@@ -163,7 +176,7 @@ best.
 Here follows a summary of the languages and technologies that I am experienced in,
 and can confidently work with:\\
 APL, Bash/Linux, Assembly, C, C++, C\#, CUDA, Elm, Elixir, F\#, Go, Haskell,
-Java, JavaScript, Matlab, Node.js, Numpy, OpenCL, OpenCV, Python (2 \& 3),
+Java, JavaScript, Matlab, Node.js, Numpy, OCaml, OpenCL, OpenCV, Python (2 \& 3),
 Standard ML, SQL and Tesseract OCR.
 
 Amazon Web Services, Azure, Benchmarking, DSL design and -implementation, Docker, functional
