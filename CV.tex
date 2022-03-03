@@ -1,24 +1,27 @@
 \documentclass[10pt, a4paper]{article}
 \usepackage[
 a4paper,
-total={6.3in, 9.85in},
-bmargin=0.5in
+total={6.1in, 9.35in},
+tmargin=1.0in,
+bmargin=0.9in
+% total={6.8in, 9.85in},
+% bmargin=0.5in
  ]{geometry}
 \usepackage{enumitem}% http://ctan.org/pkg/enumitem
-\usepackage[utf8]{inputenc}
+\usepackage{outlines}% http://ctan.org/pkg/enumitem
 \usepackage{eso-pic} % \AddToShipoutPicture
 \usepackage{fontspec}
 \usepackage{pgfplots}
 \usepackage{hyperref}
-\usepackage[utf8]{inputenc}
-\usepackage{mdframed}
+% \usepackage[utf8]{inputenc}
+% \usepackage{mdframed}
 \usepackage{float}
-\usepackage{amsmath}
+% \usepackage{amsmath}
 \usepackage{flafter}
 \usepackage{graphicx}
-\usepackage{tikz}
+% \usepackage{tikz}
 \usepackage{blindtext}
-\usepackage{pgfplots}
+% \usepackage{pgfplots}
 \usepackage{seqsplit}
 \usepackage[cache=false]{minted}
 \usepackage{stmaryrd}
@@ -33,7 +36,7 @@ bmargin=0.5in
 \usepackage{titling}
 \usepackage{titlesec}
 \titlespacing\section{0pt}{14pt plus 4pt minus 2pt}{0pt plus 2pt minus 0pt}
-\titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 0pt}
+\titlespacing\subsection{0pt}{16pt plus 4pt minus 2pt}{4pt plus 2pt minus 0pt}
 
 \usepackage{cleveref}
 \usepackage[parfill]{parskip}
@@ -43,178 +46,169 @@ bmargin=0.5in
 \usepackage{tcolorbox}
 \usepackage{etoolbox}
 
-% pdffor adjustwidth environment
 \usepackage[strict]{changepage}
 
 \usepackage{fancyhdr}
+\newcommand{\sme}{Studies\&Me}
  
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{Curriculum Vitae for Mikkel Storgaard Knudsen}
-
+% \lhead{Curriculum Vitae for Mikkel Storgaard Knudsen}
+\lhead{Curriculum Vitae}
+\rhead{Mikkel Storgaard Knudsen}
 \begin{document}
-Mikkel Storgaard Knudsen \\
-Bogtrykkervej 16 2.tv \\
-2400 København NV \\
-42 43 41 45 \\
+\section*{Mikkel Storgaard Knudsen}
+\subsection*{Lead Software Engineer}
+Bygmestervej 33 5. th. \newline
+2400 København NV \newline
+\texttt{+}45 42 43 41 45 \newline
 mikkelstorgaard@gmail.com
+\subsection*{\textit{Summary}}
+Experienced software developer with a passion for problem-solving, who finds a great satisfaction in writing modular, testable and \textit{readable} code. I have a strong belief in the mantra "You are only as good as your tools", and a decade of experience writing type-safe, stateless functional programs. \newline
+I believe in failing fast, and would rather deal with a hundred annoying compile-time errors than serving any embarrassing runtime error in front of my users. \newline
+I am a team player to the core, and as a lead, I find that the training and mentoring of my developers is a core part of job. Likewise, I myself thoroughly enjoy working together with more experienced people who I can learn from as well. I especially thrive with cross-team work -- something I benefit from greatly in my current position at \sme, where I work together with medical specialists, UX designers and data scientists to make clinical studies accessible for interested participants all over the globe.
 
-\subsection*{Summary}
-I am a Master's graduate in Computer Science from the University of Copenhagen,
-and am currently working full-time as a software developer in Copenhagen.
+\subsection*{\textit{Experience}}
+\subsection*{Lead Engineer of Decentralized Clinicals Trials at \sme}
+\subsubsection*{{\normalfont(September 2020 -- present)}}
+\textbf{Technical responsibilities- and achivements}
+\begin{outline}
+  \1 The design and implementation of \sme's own cross-platform DCT whitelabel app.\newline
+    {\footnotesize \textbf{Dart, Flutter, Drift/SQLite3}, plus \textbf{Kotlin} and \textbf{Swift} for native modules and external integrations}
 
-In the last several years, I have increasingly been getting involved in complex
-projects in fields, I haven't necessarily worked with before. In particular, I thrive with tasks related to
-research, development and problem solving, and I make an effort of delivering
-tangible and quantifiable results.\\
-My practical experience shows this by having a 100\% implementation rate of products
-from both student jobs and academic projects, always backing up my results with
-data and benchmarks.
+  \1 Design/implementation of the backend server for the above-mentioned app.\newline
+  {\footnotesize \textbf{Scala 2, Amazon Web Services (Lambda, Elastic Beanstalk, Elastic Container Registry, S3, Secrets Manager)}}
 
-As a person I am outgoing and sociable, and I enjoy contributing to my
-workplace professionally as well as socially, in example by arranging after-hours social
-events.
+  \1 Directing/implementing the tests for both the app and the backend.\newline
+    {\footnotesize \textbf{Integration- and unit tests (including mock- and property based testing)}}
 
-I am looking forward to becoming part of a talented team of highly capable
-colleagues in a high skill ceiling environment, where I can partake in solving high
-complexity tasks, as well as hone myself professionally by learning from the
-best.
+  \1 Primary responsible for continuous integration- and deployment of both app and server.\newline
+    {\footnotesize \textbf{CircleCI/GitHub}, automated building- and App Store deployment using \textbf{Fastlane}}
 
-\subsection*{Professional experience}
-\textbf{Software developer at Studies\&Me} \textit{(March 2020 -- )}
-\begin{itemize}[topsep=0pt]
-\item Responsible for the continued Studies\&Me backend development, -design and maintenance, including tasks in database design and development operations.
+  \1 Screening, interviewing and hiring new developers for \sme, as well as leading and managing a team of six developers.
+\end{outline}
 
-\item Primary responsible for software structuring, -design, and best practices for our Virtual Clinical Trial (VCT) app development.
+During our collaboration with SnapIoT (April 2020 -- September 2021), I furthermore
+\begin{outline}
+  \1 Reverse engineered SnapIoT's closed-source SDK, providing our developers with missing tools (such as a debug console), and adding missing (but trial-critical) features to the SnapIoT's existing framework.
 
-\item Primary responsible for in-house VCT developer training and -support, and for writing VCT development documentation.
+  \1 Designing and implemented a template-based framework in SnapIoT's existing toolset, separating trial content (i.e. questionnaires, onboarding flows) from app code, greatly reducing the amount of hardcoded app screens and enabling code reuse.
+  
+  \1 Trained SnapIoT's own in-house developers in using the framework mentioned above.
+\end{outline}
+\vspace*{\fill}
+\textit{(Cont'd)}
 
-\item Responsible for acquisition, on-boarding and training of student developers.
-\end{itemize}
+\pagebreak
 
-At Studies\&Me, my primary tools are Scala, MySQL, CircleCI and various AWS services, plus proprietary Flowable- and Blocky-derived programming languages for the development of VCT apps.
+\subsubsection*{Stakeholder responsibilites}
+As Lead Engineer, I have regularly represented \sme\ in stakeholder meetings across almost all aspects of our DCT developments, in meetings such as 
+\begin{outline}
+  \1 Specification/planning meetings with project owners- and data science leads from study sponsors such as LEO Pharma and Novo Nordisk.
 
-\textbf{Software developer at Abacus Medicine} \textit{(August 2019 -- March 2020)}
-  \begin{itemize}[topsep=0pt]
-  \item Main feature developer on internal proprietary \textit{assisted
-      decision-making} trading platform.
+  \1 Specification/planning meetings with various vendors and suppliers such as Klifo, 4G Clinical and Withings.
 
-  \item Primary tasks include front- and backend design, testing and
-    implementation, in addition to DevOps tasks such as the ongoing tweaking
-    of our continuous integration and -deployment pipeline.
+  \1 Virtual- and on-site meetings with close collaborator SMART-TRIAL, for planning and designing new features for their main Electronic Data Capture platform.
+\end{outline}
+\subsubsection*{In-house responsibilites}
+\begin{outline}
+  \1 Member of \sme's Environment, Health \& Safety group, partaking in workplace assessments (\textit{Arbejdspladsvurdering}) evaluations, and designing and implementing action plans for alleviating identified issues. I have also taken and completed the mandatory \textit{Arbejdsmiljøuddannelse}.
 
-  \item Key part of weekly meetings with internal stakeholders and developers, collaborating
+\1 Together with our compliance department, I have been responsible for
+  \2 Designing our \textit{GAMP5}-based Quality Management System (QMS), ensuring that our software development is auditable, and that products are validated and proven to follow the international \textit{Good Clinical Practice} guidelines. The QMS been audited by both Klifo and MedicQA.
+  \2 Implementing above-mentioned QMS in tools including \textbf{Confluence, TestRail and Jira}.
+
+\1 Responsible for administrating business-critical services such as Google Workspace (Mail, Drive, Groups, etc.), Slack and 1Password.
+\end{outline}
+
+\subsubsection*{\textit{Experience, continued}}
+\textbf{Software developer at Studies\&Me} \textit{(March 2020 -- August 2020)}
+\begin{outline}
+\1 Responsible for continued Studies\&Me backend development, -design and maintenance, including tasks in database design and development operations\newline
+    {\footnotesize \textbf{Scala 2, MySQL, GraphQL, CircleCI, various AWS services}}
+\1 Quickly transitioned to focus full time on  Decentralized Clinical Trials 
+\end{outline}
+
+\textbf{Software developer in Business Intelligence at Abacus Medicine} \textit{(August 2019 -- March 2020)}
+  \begin{outline}
+  \1 Main feature developer on in-house \textit{assisted decision-making} trading platform.\newline
+  {\footnotesize \textbf{OCaml, C\#, T-SQL, Docker, Azure, Jira, Bitbucket}}
+
+  \1 Tasks included include front- and backend design, testing and
+    implementation, and tasks in our continuous integration and -deployment pipeline.
+
+  \1 Weekly meetings with internal stakeholders and developers, collaborating
     on resolving design problems, prioritizing new features, and roadmapping. 
-  \end{itemize}
+  \end{outline}
 
-  At Abacus Medicine, I primarily work with OCaml, C\#, Microsoft's T-SQL and
-  Docker, together with Azure, Jira and Bitbucket.
-
-  \pagebreak
 \textbf{Backend developer at June by Danske Bank} \textit{(March 2017 -- February 2019)}
-  \begin{itemize}[topsep=0pt]
-  \item Primary responsible the current design and
-  implementation of our image recognition engine, which is used for
-  verifying customer identity documents during our customer onboarding
-  \textit{KYC}\footnote{Know Your Customer; in other words the step of verifying a
-    customer's identity.} process, increasing from 56\% to \textasciitilde 92\%.
+\begin{outline}
+  \1 Primary responsible for designing and implementing a new image recognition engine for verifying customer identity documents during onboarding, in alignment with Danske Bank's \textit{Know Your Customer} principles. I raised the accuracy from 56\% to \textasciitilde 92\%, compared to their existing solution.\newline
+    {\footnotesize \textbf{Python2, OpenCV, Tesseract OCR, Docker}}
 
-  \item Responsibility for developing a document rendering
-  engine in use for generating contracts and other legal documents
-  during customer onboarding and fund transactions.
+  \1 Part of the feature development team in June, with responsibilities in software implementation, code reviews, sprint planning and ticket grooming sessions.\newline
+    {\footnotesize \textbf{C\#, Docker, Microsoft SQL Server}}
+\end{outline}
 
-  \item Development of tools for our Quality Assurance division. 
-
-  \item Part of the feature development team in June, with responsibilities in 
-  software implementation, code reviews, sprint planning and
-  ticket grooming sessions.
-  \end{itemize}
-
-  At June, my primary tools have been C\#, Python, OpenCV, Tesseract OCR, LaTeX, Docker, Elm and Node.js
-
-\textbf{Full-stack Consultant at Eksponent} \textit{(March 2016 -- March 2017)}
-\begin{itemize}[topsep=0pt]
-\item 
-Design-, development- and
-deployment responsibilities for client projects, as well as tool development for
-internal usage.
-\end{itemize}
-At Eksponent, my primary tools have been C\#, Umbraco, MSSQL, Azure, Continous
-Integration using Travis, and Octopus.\\
-  % /\pagebreak
+\textbf{Full-stack Junior Consultant at Eksponent} \textit{(March 2016 -- March 2017)}
+\begin{outline}
+\1 Design-, development- and deployment responsibilities for client projects, as well as tool development for internal usage.\newline
+  {\footnotesize \textbf{C\#, JavaScript, Microsoft SQL Server}}
+\1 Design- and planning meetings with clients such as Styrelsen for Patientsikkerhed, Københavns Kommune, and others.
+\end{outline}
 
 \textbf{Teaching Assistant at The University of Copenhagen} \textit{(September 2017 -- November 2017)}
-\begin{itemize}[topsep=0pt]
-\item 
-  Teaching assistant on the \textit{Advanced Programming} master's course, where
-  I have had the responsibility for preparing and hosting weekly lab sessions
-  for my assigned class of students, in addition to correcting, grading and
-  giving feedback on weekly assignments.
-\item
-  The role included grading of the final \textit{Advanced Programming}
-  exam submissions.
-\end{itemize}
+\begin{outline}
+\1 Teaching assistant on the \textit{Advanced Programming} master's course. Tasks included preparing and hosting weekly lab sessions, correcting and grading assignments, and assisting in grading the course's final exam submissions.\newline
+  {\footnotesize\textbf{Haskell, Prolog, Erlang}}
+\end{outline}
 
-  In \textit{Advanced Programming}, I taught the languages Haskell, Prolog and
-  Erlang.
+\subsection*{\textit{Education}}
+\textbf{MSc in Computer Science at The University of Copenhagen} \textit{(2016 -- 2019)}
+\begin{outline}
+  \1 Study programme focused on compiler design, semantics and types and formal logic, and on parallel programming, including GPGPU programming in CUDA/C++.
 
-\subsection*{Education}
-\textbf{MSc in Computer Science at The University of Copenhagen} \textit{(August 2016 -- January 2019)}\\
-  During my master's program, I have focused on courses covering compilers,
-  logic, semantics and type theory, and functional and parallel programming,
-  including GPGPU\footnote{General Purpose Graphics Processing Unit} programming.
-
-  Among other things, my final year at \textit{UCPH} assisting a Physics Ph.D. student in
-  rewriting and refactoring a complex simulation
-  from sequential C++, into an elegant and parallel GPU-powered C++/CUDA solution.
+  \1 Projects included assisting a Ph.D. student in Physics in rewriting a complex three-dimensional microbiological simulation from a sequentially executed model to a parallel GPU-powered ditto, vastly increasing computational times while decreasing code complexity.
   
-  For my thesis \textit{FShark: Futhark programming in
-    FSharp}\footnote{\url{https://futhark-lang.org/student-projects/mikkel-msc-thesis.pdf}},
-  my two biggest contributions was the design and implementation of a C\# backend for
-  the Futhark compiler, and the design and implementation of an F\#-to-Futhark transpiler.
-  The C\# backend has since become part of the official Futhark compiler, and is
-  now enabling developers to effortlessly integrate high-performance GPU-powered
-  computational kernels in standard .NET projects.
+  \1 For my thesis \textit{FShark: Futhark programming in FSharp}, my two biggest contributions was the design and implementation of a C\# backend for the Futhark compiler, and the design and implementation of an F\#-to-Futhark transpiler. The C\# backend became part of the official Futhark compiler, but was since deprecated as there was little demand for maintaining the .NET-libraries.
 
-  My thesis was given the grade \textit{12} at the defense, corresponding to
-  an A on the international ECTS scale.
+  \1 My project was graded 12 (\textit{A on the intl. ECTS scale}) at the thesis defense.
+\end{outline}
   
-\textbf{BSc in Computer Science at The University of Copenhagen} \textit{(August 2012 -- June 2016)}\\
-  For my finishing bachelor's project, I extended the Futhark language with type
-  aliases, and described a complete design for implementing ML-style higher-order modules.
+\textbf{BSc in Computer Science at The University of Copenhagen} \textit{(2012 -- 2016)}
+\begin{outline}
+\1 Bachelor's thesis: Extending the Futhark programming language with working type aliases, as well as describing an implementation of ML-style higher-order modules for Futhark.
+\end{outline}
 
-\textbf{General Certificate of Secondary Education (STX) at Viborg Gymnasium \& HF} \textit{(Finished 2010)}\\
-  With a focus on social sciences, English and mathematics.
+\textbf{General Certificate of Secondary Education (STX) at Viborg Gymnasium \& HF} \textit{(class of 2010)}
+\begin{outline}
+\1 English, mathematics and social sciences
+\end{outline}
 
+\subsection*{\textit{Other experience}}
+\begin{outline}
+  \1 Board member in the student-driven \textit{Kantinen} at UCPH (2013 -- 2018)\newline
+    {\footnotesize Tasks included for daily maintenance, event planning- and execution, keeping inventory and placing weekly orders with B2B wholesalers like Sjøbeck, Carlsberg and Sugro.}
 
-  \pagebreak
-\subsection*{Skill summary}
-Here follows a summary of the languages and technologies that I am experienced in,
-and can confidently work with:\\
-APL, Bash/Linux, Assembly, C, C++, C\#, CUDA, Elm, Elixir, F\#, Go, Haskell,
-Java, JavaScript, Matlab, Node.js, Numpy, OCaml, OpenCL, OpenCV, Python (2 \& 3),
-Standard ML, SQL and Tesseract OCR.
+  \1 Member of \textit{DIKUrevy} at UCPH (2013 -- 2019)\newline
+    {\footnotesize Writing/directing sketches and songs, on-stage performances in front of large (400\texttt{+}) audiences, event- and party-planning, plus two years as co-chair of the organization.}
 
-Amazon Web Services, Azure, Benchmarking, DSL design and -implementation, Docker, functional
-programming, Git, GPGPU programming, Jenkins, Octopus, SCRUM/agile development,
-Test-Driven Development, Travis, parallel programming, property-based testing og
-project management using Jira.
+  \1 Board member in \textit{BLUS} (Copenhagen's LGBT+ Student Association)  (2012 -- 2015)\newline
+    {\footnotesize Tasks included planning and hosting parties and weekly events at \textit{Huset i Magstræde}, and collaborations with peer organizations.}
+\end{outline}
+\vspace*{\fill}
+\subsection*{\textit{About me}}
+On a more personal level, I see myself as an outgoing and open-minded individual.
+I care a lot about the environment around me and others, and I involve myself in my workplace's culture. I like social events, and consistently volunteer myself in planning committies whether it's for the occational Friday bar, or the large annual company-wide parties.
+I rarely decline a challenge -- especially not if it's within my interests. Case in point, I applied for Mensa's admission test in 2021 on a dare, and passed with flying colors.
 
-I am a competent English speaker and -writer, and am used to work in an
-international environment.
+I have an undying love for music, and love the Copenhagen nightlife. I have DJ'ed for several years, and love clubbing, going to concerts, to the cinema, or just about any other kind of show.
+In my remaining spare time, I play a bit of bass. I play badminton twice a week, and enjoy cooking on a hobby level.
 
-\subsection*{About me}
-I have been a political activist since 2009, working with both student-, LGBTQ-
-and national politics, and I am currently a member and the treasurer of
-Enhedslistens Queer Committee.
-
-My spare time is spent on my friends and hobbies: I have large interest in music,
-and I play guitar and bass at the amateur level.
-In general, I love using the city and it's nightlife, and I am an avid concert- and
-cinema-goer. I have spent my time on student revues for the last five years, primarily as a writer
-and director, but also on-stage as a singer/actor.
-
-Finally, I also enjoy cycling, video games and cooking.
+\vspace*{\fill}
+\begin{flushright}
+  Last updated \today
+\end{flushright}
 \end{document}
 
 
