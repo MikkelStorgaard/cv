@@ -1,5 +1,5 @@
 build:
-	latexmk -xelatex -shell-escape CV.tex
+	latexmk -xelatex -shell-escape cv.tex
 
 clean:
-	rm CV.aux CV.fdb_latexmk CV.fls CV.log CV.out CV.xdv
+	rm cv.aux cv.fdb_latexmk cv.fls cv.log cv.out cv.xdv
